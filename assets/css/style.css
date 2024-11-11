@@ -1,0 +1,198 @@
+/* General Body Styling */
+body {
+  background-color: whitesmoke;
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+}
+
+/* Header Styling */
+header {
+  background-color: slategray;
+  color: white;
+  width: 100%;
+}
+
+/* Navbar Flex Styling */
+header .navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+/* Brand Logo and Name Styling */
+header .navbar .brand {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif !important;
+  color: black;
+}
+
+header .navbar .brand img {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+/* Navbar Links Styling - Desktop */
+header .navbar .navlink {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  font-size: 20px;
+}
+
+header .navbar .navlink .link ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+header .navbar .navlink .link ul li {
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+header .navbar .navlink .link ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Hamburger Icon Styling */
+header .navbar .navlink .hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Close Button Styling */
+header .navbar .navlink .close-btn {
+  display: none;
+  font-size: 30px;
+  color: rgb(245, 8, 8);
+  cursor: pointer;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #333;
+  color: #f1f1f1;
+  padding: 20px 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-section h3 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section a {
+  color: #bfbfbf;
+  text-decoration: none;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li a:hover {
+  color: #fff;
+}
+
+.footer-section .socials a {
+  font-size: 1.2em;
+  color: #bfbfbf;
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+.footer-section .socials a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  padding: 10px;
+  font-size: 0.9em;
+  border-top: 1px solid #444;
+  margin-top: 20px;
+}
+
+/* Main Content Styling */
+.main-content {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.main-content h1 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.main-content p {
+  line-height: 1.6;
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+.main-content h2 {
+  font-size: 1.5em;
+  color: #444;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.main-content ul {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.main-content ul li {
+  margin-bottom: 10px;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+.main-content a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.main-content a:hover {
+  text-decoration: underline;
+}
