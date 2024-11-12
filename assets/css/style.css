@@ -75,7 +75,12 @@ header .navbar .navlink .close-btn {
 }
 
 header .navbar .navlink .close-btn {
-  color: rgb(245, 8, 8);
+  color: white;
+  background-color: red;
+  width: 40px;
+  height: 30px;
+  border-radius: 5%;
+  text-align: center;
 }
 
 /* Footer Styling */
@@ -225,10 +230,30 @@ footer {
     display: none; /* Toggle with JavaScript if needed */
     flex-direction: column;
     gap: 15px;
+    position: absolute;
+    top: 55px;
+    right: 0px;
+    width: 100%;
+    background-color: slategray;
+    padding: 10px;
+  }
+
+  header .navbar .navlink .link ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
   }
 
   header .navbar .navlink .hamburger {
     display: block;
+  }
+
+  header .navbar .navlink .close-btn {
+    display: none;
   }
 
   .footer-content {
