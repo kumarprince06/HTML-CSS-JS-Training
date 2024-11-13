@@ -268,6 +268,7 @@ footer {
   background-color: red;
   color: white;
   text-align: center;
+  font-weight: 700;
 }
 
 .modal-form {
@@ -296,6 +297,7 @@ footer {
   border: 2px solid whitesmoke;
   border-radius: 10px;
   transition: background-color 0.5s ease, color 0.5s ease;
+  margin-top: 20px;
 }
 
 .modal-form button:hover {
@@ -401,6 +403,72 @@ footer {
 .team-member p {
   font-size: 16px;
   color: #555;
+}
+
+/* Contact Page */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.contact-form,
+.contact-details,
+.location-map {
+  width: 30%;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.contact-form button:hover {
+  background-color: #555;
+}
+
+.contact-details ul {
+  list-style-type: none;
+}
+
+.contact-details li {
+  margin-bottom: 10px;
+}
+
+/* Adjusting map and layout */
+.location-map {
+  margin-bottom: 40px; /* Add margin to separate the map from the footer */
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.location-map iframe {
+  width: 100%; /* Ensure it takes up the full width of the container */
+  height: 100%;
+  border-radius: 5px;
 }
 
 /* Responsive Styling */
