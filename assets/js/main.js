@@ -63,4 +63,19 @@ document.addEventListener("DOMContentLoaded", () => {
       closeBtn.style.display = "none";
     }
   });
+
+  // Syllabus toggle functionality
+  const toggleSyllabusButton = document.getElementById("toggle-syllabus");
+  const syllabusContent = document.getElementById("syllabus-content");
+
+  toggleSyllabusButton.addEventListener("click", () => {
+    syllabusContent.classList.toggle("hidden");
+
+    // Toggle arrow direction in the button
+    if (syllabusContent.classList.contains("hidden")) {
+      toggleSyllabusButton.textContent = "▼";
+    } else {
+      toggleSyllabusButton.textContent = "▲";
+    }
+  });
 });
