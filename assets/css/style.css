@@ -323,6 +323,7 @@ h2 {
 }
 
 /* About Page */
+/* About Section */
 .about-section {
   margin: 40px auto;
   padding: 20px;
@@ -332,6 +333,7 @@ h2 {
   font-family: Arial, sans-serif;
   color: #333;
 }
+
 .about-intro h1 {
   font-size: 32px;
   color: #333;
@@ -358,6 +360,7 @@ h2 {
   line-height: 1.6;
 }
 
+/* Team Section */
 .team {
   margin-top: 40px;
 }
@@ -369,26 +372,30 @@ h2 {
 
 .team-members {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: 20px;
+  flex-wrap: wrap; /* Ensures team members will wrap to the next row on smaller screens */
 }
 
 .team-member {
   text-align: center;
-  width: 30%;
+  width: 20%; /* Adjusted width for two rows */
+  margin-bottom: 20px; /* Space between team members */
 }
 
 .team-member img {
-  width: 80%;
-  height: 40%;
+  width: 100%; /* Set width to 100% of the container */
+  height: 300px; /* Equal height for the images */
+  object-fit: cover; /* Ensures images cover the area without distortion */
   border: 2px solid slategray;
-  border-radius: 50%;
-  margin-bottom: 15px;
+  border-radius: 50%; /* Circular images */
+  margin-bottom: 0; /* Removes space below the image */
 }
 
 .team-member h3 {
   font-size: 20px;
   color: #333;
+  margin-top: 10px;
 }
 
 .team-member p {
@@ -490,10 +497,36 @@ h2 {
   .main-content ul li {
     font-size: 1em;
   }
+
+  .team-members {
+    justify-content: space-evenly; /* Center items and space evenly on tablet */
+  }
+
+  .team-member {
+    width: 45%; /* Adjust width for 2 rows */
+  }
+
+  .team-member img {
+    height: 300px;
+  }
 }
 
 @media (max-width: 425px) {
   .footer-section.links-contact {
     flex-direction: column;
+  }
+
+  .team-members {
+    flex-direction: column; /* Stack team members vertically on mobile */
+    align-items: center; /* Center the items */
+  }
+
+  .team-member {
+    width: 80%; /* Full width of the container on mobile */
+    margin-bottom: 15px;
+  }
+
+  .team-member img {
+    height: 300px; /* Slightly smaller height on mobile */
   }
 }
