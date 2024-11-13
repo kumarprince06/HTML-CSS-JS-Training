@@ -317,7 +317,7 @@ footer {
   margin-left: 10px; /* Space between heading and button */
 }
 
-h2 {
+.syllabus-heading-btn {
   display: inline; /* Makes the heading inline */
   margin-right: 10px; /* Space between heading and button */
 }
